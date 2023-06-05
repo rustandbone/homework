@@ -1,0 +1,35 @@
+/* 초기화 및 기본 세팅 */
+body {
+    font: inherit;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+      "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+      "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      sans-serif;
+}
+
+body, ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* 리스트 */
+.valid__list {
+  width: 250px;
+  font-size: 0.875rem;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background-color: lightgray;
+  list-style-type: none;
+  border-radius: 100px;
+}
+
+/* 링크 */
+.valid__link {
+  display: block;
+  color: #181818;
+  text-decoration: none;
+  padding-left: 20px;
+  margin-left: 5px;
+  background: url(image/validation_icon.png) no-repeat;
+}
