@@ -1,0 +1,61 @@
+/* 초기화 및 기본 세팅 */
+body {
+  font: inherit;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+}
+
+body, ul, dl, dt, dd, h3 {
+padding: 0;
+margin: 0;
+}
+
+/* 배경 */
+.webTerms {
+  width: 280px;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background: linear-gradient(lightgray, whitesmoke); /* 그래디언트 효과 */
+}
+
+/* 제목, 이미지, 설명 */
+.webTerms__title {
+  margin-bottom: 15px;
+}
+
+.dlSection {
+  display: flow-root;
+}
+
+.dlSection__img1 {
+  float: left;
+  padding-right: 15px;
+}
+
+.dlSection__img2 {
+  float: right;
+  padding-left : 15px;
+}
+
+.dlSection__title {
+  font-weight: bold;
+  color: #296897;
+  padding-bottom: 10px;
+}
+
+.firstDl {
+  margin-bottom: 20px;
+}
+
+/* 말줄임표 */
+.dlSection__desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
