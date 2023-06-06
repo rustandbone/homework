@@ -8,8 +8,13 @@ body {
 }
 
 body, ul, dl, dt, dd, h3 {
-padding: 0;
-margin: 0;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #181818;
+  text-decoration: none;
 }
 
 /* 배경 */
@@ -27,20 +32,6 @@ margin: 0;
   margin-bottom: 15px;
 }
 
-.dlSection {
-  display: flow-root;
-}
-
-.dlSection__img1 {
-  float: left;
-  padding-right: 15px;
-}
-
-.dlSection__img2 {
-  float: right;
-  padding-left : 15px;
-}
-
 .dlSection__title {
   font-weight: bold;
   color: #296897;
@@ -49,6 +40,27 @@ margin: 0;
 
 .firstDl {
   margin-bottom: 20px;
+}
+
+/* float 구현 */
+.dlSection {
+  display: flow-root;
+}
+
+.dlSection__img1 {
+  float: left;
+  padding-right: 15px;
+  margin-top: -30px;
+}
+
+.dlSection__img2 {
+  float: right;
+  padding-left : 15px;
+  margin-top: -25px;
+}
+
+.title1 {
+  padding-left: 75px;
 }
 
 /* 말줄임표 */
