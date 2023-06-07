@@ -1,0 +1,125 @@
+/* Accessibility Styles */
+.a11yHidden,
+legend {
+  overflow: hidden;
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* 초기화 및 기본 세팅 */
+body {
+  font: inherit;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+  font-size: 13px;
+}
+
+body, ul, h3, fieldset {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style-type : square;
+}
+
+fieldset {
+  border: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+a {
+  text-decoration: none;
+  color: #181818;
+}
+
+:root {
+  --radius: 5px;
+}
+
+/* 로그인 섹션 */
+.login {
+  width: 244px;
+  padding: 12px;
+  background: linear-gradient(to right, #ED552F, #E8852E);
+  border-radius: var(--radius);
+  box-sizing: border-box;
+  box-shadow: 5px 5px gray;
+}
+
+.loginTitle {
+  color: #FF0;
+  padding-bottom: 10px;
+}
+
+.loginForm {
+  position: relative;
+  border-radius: var(--radius) var(--radius) 0 0;
+  background-color: #fff;
+}
+
+.login__Fieldset {
+  padding: 8px 8px 0 8px;
+  border-radius: var(--radius);
+}
+
+.login__label {
+  width: 25%;
+  display: inline-block;
+}
+
+.login__input {
+  width: 43%;
+  border: #CCC solid 1px;
+  border-radius: var(--radius);
+  padding: 3px 0 3px 7px;
+  margin-bottom: 4px;
+  box-sizing: border-box;
+}
+
+/* 버튼 설정 */
+.login__Btn {
+  color: #fff;
+  background-color: #ED552F;
+  border: 0;
+  border-radius: var(--radius);
+  padding: 17px 5px;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  cursor: pointer;
+}
+
+/* 회원 가입, 아이디 비밀번호 찾기 링크 */
+.login__linkList {
+  display: flow-root;
+  padding: 10px;
+  padding-top: 5px;
+  border-radius: 0 0 var(--radius) var(--radius);
+  background-color: #fff;
+}
+
+.login__linkList li:first-child {
+  float: left;
+  margin-left: 15px;
+}
+
+.login__linkList li:last-child {
+  float: right;
+}
+
+/* 가로선 설정 */
+hr {
+  border-width: 1px 0 0 0;
+  background-color: #CCC;
+}
