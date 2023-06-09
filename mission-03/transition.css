@@ -1,0 +1,89 @@
+/* Accessibility Styles */
+.a11yHidden,
+legend {
+  overflow: hidden;
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* 초기화 및 기본 세팅 */
+body {
+  font: inherit;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+  font-size: 13px;
+  color: #181818;
+}
+
+body, ul, h3 {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style-type : none;
+}
+
+a {
+  text-decoration: none;
+  color: #181818;
+  display: block;
+}
+
+/* 공통 */
+.site, .site__lists {
+  border: 1px solid #A3A3A3;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* 사이트 섹션 설정 */
+.site {
+  width: 190px;
+  background: linear-gradient(#CCC, #EEE);
+  padding: 8px 12px 12px;
+}
+
+/* 제목 */
+.siteTitle {
+  padding-bottom: 10px;
+}
+
+.siteTitle__span {
+  color: #ED552F;
+}
+
+/* 사이트 목록 */
+.site__lists {
+  height: 27px;
+  background-color: #fff;
+  padding-left: 30px;
+  transition: height 700ms, padding 500ms 0.5s;
+  overflow: hidden;
+}
+
+/* 개별 사이트 패딩 설정 */
+.site__list {
+  padding-bottom: 10px;
+}
+
+.site__list:first-child {
+  padding-top: 5px;
+}
+
+.site__list:last-child {
+  padding-bottom: 5px;
+}
+
+/* 호버 효과 */
+.site__lists:hover {
+  height: 145PX;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
