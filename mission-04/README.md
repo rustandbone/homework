@@ -122,7 +122,6 @@ a {
 - border 태그들로 border에 그래디언트 값 적용
 - grid 값 주어 첫 줄 좌측 80% 차지하도록 함.
 ```
-/* 뉴스 타이틀 */
 .newsTitle {
   font-size: 14px;
   color: #ED552F;
@@ -142,7 +141,6 @@ a {
 - text-align right 값으로 우측 정렬되도록 함
   
 ```
-/* 더보기 */
 .plusNews {
   text-align: right;
   grid-area: 1 / 9 / 2 / 11;
@@ -156,7 +154,6 @@ a {
 - 패딩으로 각 요소 사이 간격 줌
   
 ```
-/* 뉴스 게시물 */
 .news__ul {
   grid-area: 2 / 4 / 3 / 11;
   text-align: justify;
@@ -180,7 +177,6 @@ a {
 - 캡션에 패딩과 마진으로 간격 맞춤
 
 ```
-/* 뉴스 게시물 이미지, 캡션 */
 .news__figure {
   grid-area: 2 / 1 / 3 / 4;
 }
